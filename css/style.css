@@ -194,6 +194,10 @@ h1, .headings
 {
 	color: #d6493c;
 }
+.fa-stack-overflow, .fa-stack-overflow:hover
+{
+	color: #f48024;
+}
 .contactMe a.fa:hover
 {
 	filter: brightness(85%);
