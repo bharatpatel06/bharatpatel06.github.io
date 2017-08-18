@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(window).on("load", function(){
 	$(".ratings").each(function(){
 		var rating = $(this).attr("rate");
 		var rateString="";
