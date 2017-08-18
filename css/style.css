@@ -53,16 +53,16 @@ h1, .headings
 }
 .aboutMe.contents
 {
-	background-image: url(../images/Picture3.png);
+	background-image: url(../images/Picture3.webp);
 }
 .skills.contents
 {
-	background-image: url(../images/skillsBackground.jpg);
+	background-image: url(../images/skillsBackground.webp);
 	min-height: 100vh;
 }
 .myWork.contents
 {
-	background-image: url(../images/workBG.jpg);
+	background-image: url(../images/workBG.webp);
 }
 .aboutMe .mainContent::before
 {
@@ -228,7 +228,7 @@ h1, .headings
 	}
 	.aboutMe.contents
 	{
-		background-image: url(../images/mobileCover.jpg);
+		background-image: url(../images/mobileCover.webp);
 	}
 	.skillsHolder .ratings .fa
 	{
