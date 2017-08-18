@@ -19,7 +19,7 @@ $(document).ready(function(){
 		if(flag==0)
 		{
 			flag=1;
-			var yql = encodeURIComponent("select * from xml where url='https://codepen.io/bharatpatel/popular/feed/'");
+			var yql = encodeURIComponent("select * from xml where url='https://codepen.io/bharatpatel/public/feed/'");
 
 			yql = "https://query.yahooapis.com/v1/public/yql?q="+yql+"&format=json&callback=?"
 			$.getJSON(yql, function(data) {
