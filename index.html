@@ -26,20 +26,31 @@
 		{
 			font-size: 3vw;
 		}
-		.sneakImg, .comingSoon, .launchingImg
+		.sneakImg, .comingSoon, .launchingImg, .oldVersion
 		{
 			position: absolute;
 			height: 100px;
-			top: 100px;
+			top: 0;
 			bottom: 0;
 			left: 0;
 			right: 0;
 			margin: auto;
 			text-align: right;
 		}
+		.oldVersion
+		{
+			font-size: 25px;
+			top: 20px;
+			height: unset;
+			bottom: unset;
+			left: unset;
+			text-decoration: none;
+			color: #616161;
+		}
 		.comingSoon
 		{
 			bottom: unset;
+			top: 100px;
 		}
 		.sneakImg
 		{
@@ -64,6 +75,7 @@
 	</style>
 </head>
 <body>
+	<a class="oldVersion" href="old%20version/index.html">Click here for older version of my website..</a>
 	<div class="comingSoon">
 		<span>Re-Launching Soon!!!<br><sup>with a Logo Design...</sup></span>
 	</div>
