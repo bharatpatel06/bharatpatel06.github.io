@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Re-Launching Soon</title>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+		html
+		{
+			background: #f3f5f8;
+			font-family: 'Alegreya Sans SC', sans-serif;
+			text-align: center;
+			position: absolute;
+			margin: 0;
+			width: 100vw;
+			height: 100vh;
+		}
+		span
+		{
+			border-right: 0;
+			border-left: 0;
+			font-size: 7vw;
+			color: #616161;
+		}
+		span sup
+		{
+			font-size: 3vw;
+		}
+		.sneakImg, .comingSoon, .launchingImg, .oldVersion
+		{
+			position: absolute;
+			height: 100px;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			text-align: right;
+		}
+		.oldVersion
+		{
+			font-size: 25px;
+			top: 20px;
+			height: unset;
+			bottom: unset;
+			left: unset;
+			text-decoration: none;
+			color: #616161;
+		}
+		.comingSoon
+		{
+			bottom: unset;
+			top: 100px;
+		}
+		.sneakImg
+		{
+			height: unset;
+			top: unset;
+			left: unset;
+			width: 20%;
+			min-width: 300px;
+			background-image: url("images/eyes.png");
+			background-size: cover;
+		}
+		.launchingImg
+		{
+			top: -10%;
+			right: unset;
+			top: unset;
+			z-index: -2;
+			width: 60%;
+			height: unset;
+			left: -100px;
+		}
+	</style>
+</head>
+<body>
+	<a class="oldVersion" href="old%20version">Click here for older version of my website..</a>
+	<div class="comingSoon">
+		<span>Re-Launching Soon!!!<br><sup>with a Logo Design...</sup></span>
+	</div>
+		<img class="launchingImg" src="images/rocket.gif">
+		<img class="sneakImg" src="images/sneak3.png">
+</body>
+<script>
+$(document).ready(function(){
+	$("html").bind("mousemove", function(e){
+		var mouseTopPos = e.clientY;
+		var mouseLeftPos = e.clientX;
+		var elementTopPos = $('.sneakImg').offset().top+256;
+		var elementLeftPos = $('.sneakImg').offset().left/2+500;
+		var topDiff, leftDiff, diffRatio=100;
+		topDiff = -((elementTopPos-mouseTopPos)/diffRatio);
+		if(topDiff < -5.8)
+			topDiff = -5.8;
+		leftDiff = -((elementLeftPos-mouseLeftPos)/diffRatio);
+		$(".sneakImg").css("background-position", leftDiff+'px '+topDiff+'px');
+	})
+});
+</script>
+</html>

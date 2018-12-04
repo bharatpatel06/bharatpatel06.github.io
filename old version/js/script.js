@@ -21,11 +21,11 @@ $(window).on("load", function(){
 			flag=1;
 			var yql = "https://codepen.io/bharatpatel/public/feed";
 			$.ajax({
-                url:        yql,
-                dataType:   "html",
-                success:    function(data){
-                	data = $.parseHTML(data);
-                	var items = data[0].getElementsByTagName("item");
+				url:        yql,
+				dataType:   "html",
+				success:    function(data){
+					data = $.parseHTML(data);
+					var items = data[0].getElementsByTagName("item");
 					for(var i=0 ; i< 6; i++)
 					{
 						link = items[i].children[2].innerHTML;
@@ -35,7 +35,7 @@ $(window).on("load", function(){
 						if((i+1)%3 == 0)
 							$(".loadRSS").append("<div class='clearfix'></div>");
 						// if((i+1)%2 == 0)
-						// 	$(".loadRSS").append("<div class='clearfix hidden-md hidden-lg'></div>");
+						//  $(".loadRSS").append("<div class='clearfix hidden-md hidden-lg'></div>");
 					}
 				}
 			});

@@ -1,0 +1,271 @@
+*
+{
+	transition: 0.1s all ease;
+}
+body
+{
+	margin: 0;
+	overflow-x: hidden;
+	font-family: 'Chakra Petch', sans-serif;
+}
+.logo
+{
+	margin: 10px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 999;
+	width: 150px;
+	opacity: 0.6;
+	-webkit-filter: grayscale(100%) brightness(150%);
+	filter: grayscale(100%) brightness(150%);
+}
+.logo:hover
+{
+	opacity: 1;
+	filter: none;
+	-webkit-filter: none;
+}
+.container, .atmospheres
+{
+	height: 400vh;
+	width: 100vw;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+.atmospheres
+{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+.atmospheres div, .container div.info
+{
+	height: 100vh;
+	width: 100vw;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+.autoCenter
+{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border: 0px solid rgba(0, 0, 0, 0.4);
+	/* background: rgba(255, 255, 255, 0.4); */
+	padding: 0 1vw;
+	color: rgba(0, 0, 0, 0.8);
+	font-size: 150%;
+	width: 80vw;
+}
+.aboutMe .autoCenter
+{
+	margin-top: -20vh;
+}
+.timeline
+{
+	text-align: center;
+}
+.timeline h5
+{
+	margin: 0;
+	margin-bottom: 23px;
+}
+.timeline h5:not(:last-child):after
+{
+	content: "";
+	position: absolute;
+	margin-top: 30px;
+	left: 50%;
+	height: 10px;
+	width: 0;
+	border: 2px solid #000;
+}
+.myWork *, .contactMe *
+{
+	color: #fff !important;
+}
+
+.workTabs
+{
+	width: 33.33%;
+	overflow: hidden;
+	float: left;
+	text-align: center;
+}
+.workTabs img
+{
+	width: 70%;
+}
+.workTabs a
+{
+	font-size: 15px;
+	text-decoration: none;
+}
+.viewMoreWork
+{
+	text-align: right;
+}
+.viewMoreWork a
+{
+	text-decoration: none;
+}
+.contactMe a
+{
+	font-size: 10vw;
+	margin: 0 1vw; 
+	text-decoration: none;
+	transition: none;
+	opacity: 0.9;
+}
+.contactMe a:hover
+{
+	opacity: 1;
+}
+
+.troposphere
+{
+	background-color: #cdf8fc;
+	background-image: repeating-linear-gradient(#99f1fa 0, #cdf8fc, #cdf8fc, #cdf8fc);
+}
+.stratosphere
+{
+	background-color: #99f1fa;
+	background-image: repeating-linear-gradient(#4b99ab 0, #99f1fa, #99f1fa, #99f1fa);
+}
+.mesosphere
+{
+	background-color: #4b99ab;
+	background-image: repeating-linear-gradient(#306872 0, #4b99ab, #4b99ab, #4b99ab);
+}
+.themosphere
+{
+	background-color: #306872;
+	background-image: repeating-linear-gradient(#102226 0, #306872, #306872, #306872);
+}
+.land img, .skyline img
+{
+	position: absolute;
+	bottom: 0;
+}
+.land img
+{
+	z-index: 2;
+	width: 100vw;
+}
+img.guy
+{
+	z-index: 4;
+	width: 10vw;
+	left: 25vw;
+}
+.bigMountain
+{
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	-ms-transform: translate(25%, 0);
+	transform: translate(25%, 0);
+	width: 110vw;
+}
+.shadowCity
+{
+	z-index: 1 !important;
+	filter: brightness(70%);
+	width: 125vw !important;
+}
+.paraguy
+{
+	z-index: 2;
+	position: absolute;
+	left: 65vw;
+	width: 25vw;
+	margin-bottom: 80vh;
+	bottom: 0;
+}
+.parabg
+{
+	z-index: 1;
+	width: 70vw;
+	position: absolute;
+	margin-bottom: -20vh;
+	opacity: 0.4;
+	bottom: 0;
+	filter: brightness(70%);
+}
+.parafront
+{
+	width: 60vw;
+	z-index: 3;
+	position: absolute;
+	left: -30vw;
+	filter: blur(1px);
+	margin-bottom: 60vh;
+	bottom: 0;
+}
+.flyguy
+{
+	z-index: 3;
+	position: absolute;
+	left: -3vw;
+	width: 20vw;
+	margin-bottom: 220vh;
+}
+.airplane
+{
+	z-index: 1;
+	position: absolute;
+	left: 70vw;
+	width: 20vw;
+	margin-bottom: 150vh;
+	opacity: 0.4;
+}
+.stars, .stars2
+{
+	width: 100vw;
+	z-index: 3;
+	position: absolute;
+	top: 0;
+}
+.stars2
+{
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+.spaceguy
+{
+	z-index: 3;
+	width: 25vw;
+	position: absolute;
+	left: 75vw;
+	margin-bottom: 300vh;
+}
+.satellite
+{
+	z-index: 3;
+	width: 20vw;
+	position: absolute;
+	top: 0;
+}
+h1
+{
+	font-weight: 100;
+}
+.footer
+{
+	position: absolute;
+	bottom: 10vh;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.footer a
+{
+	font-size: initial;
+	margin: 0;
+}
